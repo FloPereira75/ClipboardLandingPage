@@ -1,0 +1,162 @@
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    color: var(--grayish-blue);
+    min-height: 100vh;
+}
+
+p {
+    line-height: 28px;
+}
+h1 {
+    color: var(--dark-grayish-blue);
+    margin-bottom: 30px;
+}
+h2 {
+    color: var(--dark-grayish-blue);
+    margin-bottom: 30px;
+}
+h3 {
+    color: var(--dark-grayish-blue);
+    margin: 30px 0;
+}
+
+header {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/bg-header-mobile.png);
+    background-size: cover;
+}
+
+main {
+    text-align: center;
+    padding: 0 30px;
+}
+
+.historyOf {
+    margin-bottom: 150px;
+}
+
+.dwnldBtnDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.dwnldBtn {
+    font-family: 'Bai Jamjuree', sans-serif;
+    width: 100%;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+}
+.iOs {
+    background: var(--strong-cyan);
+    box-shadow: 0px 3px 1px rgb(40, 126, 113);
+}
+.mac {
+    background: var(--light-blue);
+    box-shadow: 0px 3px 1px hsl(232, 28%, 32%);
+}
+
+.keepTrack {
+    margin-bottom: 150px;
+}
+
+.desktopImg {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.accessClipboard {
+    margin-bottom: 120px;
+}
+
+.mobileImg {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.workflow {
+    margin-bottom: 120px;
+}
+
+.workflowList {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 90px;
+}
+
+.companyList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 150px;
+}
+
+.companyList img {
+    width: 120px;
+}
+
+.clipboardiOsMac {
+    margin-bottom: 150px;
+}
+
+footer {
+    width: 100%;
+    background: rgb(159 171 178 / 10%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.cpLogo {
+    width: 60px;
+    margin-bottom: 30px;
+}
+
+.linksList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+} 
+
+footer .linksList a {
+    color: var(--dark-grayish-blue);
+    text-decoration: none;
+}
+
+.socialNetwork {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
