@@ -67,9 +67,10 @@ main {
     color: white;
     font-weight: bold;
     letter-spacing: 1px;
-    padding: 20px;
+    padding: 15px;
     border: none;
     border-radius: 50px;
+    cursor: pointer;
 }
 .iOs {
     background: var(--strong-cyan);
@@ -159,4 +160,175 @@ footer .linksList a {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 2.25em;
+    }
+    h2 {
+        font-size: 1.75em;
+    }
+    h3 {
+        font-size: 1.42em;
+    }
+    header {
+        background: url(images/bg-header-desktop.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 150px;
+    }
+
+    .historyOf {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .historyOf p {
+        width: 66%;
+    }
+
+    .dwnldBtnDiv {
+        flex-direction: row;
+        gap: 20px;
+        width: 500px;
+    }
+
+    .iOs:hover {
+        background: hsla(171, 66%, 44%, 0.5);
+        box-shadow: 0px 3px 1px rgba(40, 126, 113, 0.75);
+        transition: .5s;
+    }
+    .mac:hover {
+        background: hsla(233, 100%, 69%, 0.5);
+        box-shadow: 0px 3px 1px rgba(97, 115, 255, 0.75);
+        transition: .5s;
+    }
+
+    .keepTrack {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .keepTrack p {
+        width: 66%;
+    }
+
+    .KTimgAndTxt {
+        display: flex;
+        position: relative;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .KTimgAndTxt img {
+        position: relative;
+        left: -25%;
+    }
+
+    .KTtxt {
+        text-align: initial;
+        margin-left: -150px;
+    }
+    .KTtxt p {
+        width: auto;
+    }
+
+    .accessClipboard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .accessClipboard p {
+        width: 66%;
+    }
+    .accessClipboard img {
+        margin-top: 90px;
+    }
+
+    .workflowList {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .workflowListDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .companyList {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 90px;
+        margin-top: 60px;
+    }
+    .companyList img {
+        width: auto;
+    }
+
+    .clipboardiOsMac {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .clipboardiOsMac p {
+        width: 66%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 60px 150px;
+    }
+
+    .linksList {
+        text-align: initial;
+        flex-direction: row;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .linksList a {
+        margin-right: 60px;
+    }
+    .linksList a:hover {
+        color: var(--strong-cyan);
+    }
+
+    .linksList a:nth-child(3) {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+
+    .linksList a:nth-child(5) {
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+    }
+
+    .cpLogo {
+        margin: 0;
+    }
+
+    .socialNetwork {
+        margin: 0;
+    }
+
+    .svgIcon:hover {
+        cursor: pointer;
+    }
+    .svgIcon:hover path  {
+        fill: var(--strong-cyan);
+    }
 }
